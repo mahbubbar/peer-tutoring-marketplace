@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find a friendly peer tutor for mathematics, guitar, or spoken English.">
+  <title>Study Side by Side | Peer Tutoring</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="brand"><a href="#top">Study Side by Side</a></h1>
+    <p class="tagline">Good help, from someone who's been there.</p>
+    <nav aria-label="Main navigation">
+      <a href="#tutors">Meet the tutors</a>
+      <a href="#booking">Request a session</a>
+      <a href="#contact">Get in touch</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="tutors-section" id="tutors" aria-labelledby="tutors-title">
+      <div class="section-heading">
+        <p class="eyebrow">Learn together</p>
+        <p class="hero-title">Find your person.<br>Find your pace.</p>
+        <p class="section-intro">One-to-one help from students who recently mastered the same material.</p>
+      </div>
+
+      <h2 id="tutors-title">A few good people to learn from</h2>
+      <div class="tutor-list">
+        <article class="tutor">
+          <p class="subject-tag">Mathematics</p>
+          <h3>Haroon Khan</h3>
+          <p class="tutor-detail">Algebra and calculus, explained one clear step at a time.</p>
+          <p class="rate">$18 <span>/ hour</span></p>
+        </article>
+        <article class="tutor">
+          <p class="subject-tag">Guitar</p>
+          <h3>Mafisto Ahmed</h3>
+          <p class="tutor-detail">Beginner chords, practice plans, and songs you actually like.</p>
+          <p class="rate">$16 <span>/ hour</span></p>
+        </article>
+        <article class="tutor">
+          <p class="subject-tag">Spoken English</p>
+          <h3>Pushpa Raj</h3>
+          <p class="tutor-detail">Relaxed conversation practice for class, work, and everyday life.</p>
+          <p class="rate">$20 <span>/ hour</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="booking-section" id="booking" aria-labelledby="booking-title">
+      <div class="booking-copy">
+        <p class="eyebrow">Make it yours</p>
+        <h2 id="booking-title">Ask for a session</h2>
+        <p>Share what you're working on and choose a day. Your tutor can follow up to find a time that works.</p>
+      </div>
+      <form class="booking-form" action="#booking" method="get">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="student-name">Your name</label>
+            <input id="student-name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-field">
+            <label for="student-email">Email address</label>
+            <input id="student-email" name="email" type="email" autocomplete="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="subject">What would you like help with?</label>
+            <select id="subject" name="subject" required>
+              <option value="" selected disabled>Choose a subject</option>
+              <option value="mathematics">Mathematics</option>
+              <option value="guitar">Guitar</option>
+              <option value="spoken-english">Spoken English</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="session-date">Preferred date</label>
+            <input id="session-date" name="date" type="date" required>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="session-notes">Anything you'd like your tutor to know? <span>(optional)</span></label>
+          <textarea id="session-notes" name="notes" rows="3" placeholder="A topic, a goal, or a question to get started..."></textarea>
+        </div>
+        <button type="submit">Request a session <span aria-hidden="true">→</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <p>© 2026 Study Side by Side</p>
+    <p>Questions? <a href="mailto:hassanmahbub266@gmail.com">hassanmahbub266@gmail.com</a></p>
+  </footer>
+</body>
+</html>
